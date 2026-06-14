@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APSARA Cambodia</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#333;
+    background:#faf8f5;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)),
+    url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:5rem;
+    font-family:'Playfair Display',serif;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 35px;
+    background:#c9a86a;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-family:'Playfair Display',serif;
+    font-size:2.5rem;
+}
+
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.features{
+    background:white;
+}
+
+.feature-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.feature{
+    text-align:center;
+    padding:25px;
+}
+
+.contact{
+    text-align:center;
+    background:#f2ece3;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#222;
+    color:white;
+}
+
+@media(max-width:768px){
+.hero-content h1{
+    font-size:3rem;
+}
+
+nav ul{
+    display:none;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">APSARA</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#collection">Collection</a></li>
+<li><a href="#values">Values</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>APSARA</h1>
+<p>Modern Khmer Fashion Inspired by Heritage, Crafted for the Future.</p>
+<a href="#collection" class="btn">Explore Collection</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">Our Story</h2>
+<div class="about">
+<p>
+APSARA is a Cambodian fashion brand that blends traditional Khmer inspiration
+with contemporary design. We celebrate Cambodian identity through elegant,
+sustainable, and high-quality fashion pieces designed for the modern generation.
+</p>
+</div>
+</section>
+
+<section id="collection">
+<h2 class="section-title">Featured Collections</h2>
+<div class="cards">
+<div class="card">
+<h3>Khmer Heritage</h3>
+<p>Elegant designs inspired by Cambodia's rich cultural heritage.</p>
+</div>
+
+<div class="card">
+<h3>Modern Luxury</h3>
+<p>Contemporary silhouettes crafted with premium materials.</p>
+</div>
+
+<div class="card">
+<h3>Limited Edition</h3>
+<p>Exclusive collections created in small quantities.</p>
+</div>
+</div>
+</section>
+
+<section id="values" class="features">
+<h2 class="section-title">Why APSARA?</h2>
+<div class="feature-list">
+<div class="feature">
+<h3>Khmer Identity</h3>
+<p>Inspired by Cambodian culture and craftsmanship.</p>
+</div>
+
+<div class="feature">
+<h3>Sustainability</h3>
+<p>Responsible production and quality materials.</p>
+</div>
+
+<div class="feature">
+<h3>Premium Quality</h3>
+<p>Attention to detail and luxury finishing.</p>
+</div>
+
+<div class="feature">
+<h3>Modern Design</h3>
+<p>Fashion-forward pieces for today's generation.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="section-title">Contact Us</h2>
+<p><strong>Email:</strong> theapsaracambodia@gmail.com</p>
+<p><strong>Instagram:</strong> @apsaraofficial</p>
+<p><strong>TikTok:</strong> @apsaraofficial</p>
+</section>
+
+<footer>
+<p>© 2026 APSARA Cambodia. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
